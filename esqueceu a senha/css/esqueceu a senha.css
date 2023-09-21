@@ -27,20 +27,21 @@ section{
 
 .card{
   background-color: #fff;
-  width: 40%;
-  height:50%;
-  margin-left: 30%;
+  width: 30%;
+  height:25rem;
+  margin-left: 35%;
   border-radius: 20px;
   
 
 }
  
 h1{
-    
+    margin-top: 50px;
     margin-left: 10%;
     font-size: 20px;
 }
 h2{ 
+    margin-top: 20px;
     margin-left: 10%;
     font-size: 15px;
 }
@@ -54,7 +55,7 @@ input{
     margin-top: 20px;
     border-radius: 20px;
     width: 50%;
-    height: 1.5rem;
+    height: 2rem;
     background-color: #DBDBDB;
     
 }
@@ -68,10 +69,10 @@ h3{
 }
 
 .sign-btn{
-    margin-top: 20px;
+    margin-top: 50px;
     display: inline-block;
     width: 20%;
-    height: 23px;
+    height: 30px;
     background-color: #4C5DB7;
     color: #000;
     border: none;
@@ -84,7 +85,7 @@ h3{
 }
 
 .sign-btn:hover{
-    background-color: #0E1A5C;
+    background-color: #DBDBDB;
 }
 
 

@@ -48,6 +48,9 @@ function updateProgressbar() {
 
    
 }
+
+
+/*Modificação de escrita na area de corfimar termos*/
 const mensagem1 = document.getElementById("mensagem1");
         const mensagem2 = document.getElementById("mensagem2");
         const mensagem3 = document.getElementById("mensagem3");
@@ -67,3 +70,42 @@ const mensagem1 = document.getElementById("mensagem1");
         });
 
 
+/*fim*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const formSteps = document.querySelectorAll(".form-step");
+  let currentStep = 1; // Começa na primeira etapa (etapa1)
+
+  // Função para mostrar a etapa atual e ocultar as outras
+  function showStep(stepNumber) {
+      formSteps.forEach((step) => {
+          step.style.display = "none";
+      });
+
+      const currentStepElement = document.getElementById(`etapa${stepNumber}`);
+      if (currentStepElement) {
+          currentStepElement.style.display = "block";
+      }
+  }
+
+  // Evento para avançar para a próxima etapa
+  document.querySelector("#nextBtn").addEventListener("click", function () {
+      currentStep++;
+      if (currentStep > 4) {
+          currentStep = 4;
+      }
+      showStep(currentStep);
+  });
+
+  // Evento para voltar para a etapa anterior
+  document.querySelector("#prevBtn").addEventListener("click", function () {
+      currentStep--;
+      if (currentStep < 1) {
+          currentStep = 1;
+      }
+      showStep(currentStep);
+  });
+
+  // Mostrar a primeira etapa inicialmente
+  showStep(currentStep);
+});

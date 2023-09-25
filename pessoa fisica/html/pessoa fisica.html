@@ -15,153 +15,193 @@
 
         </a>
     </div>
-    <div class="container">
-
-        <div class="progress-bar">
-            <div class="step">
-                <p>Nome</p>
-                <div class="bullet">
-                    <span>1</span>
-                </div>
-                <div class="check fas fa-check"></div>
-            </div>
-            <div class="step">
-                <p>Contato</p>
-                <div class="bullet">
-                    <span>2</span>
-                </div>
-                <div class="check fas fa-check"></div>
-            </div>
-            <div class="step">
-                <p>Data</p>
-                <div class="bullet">
-                    <span>3</span>
-                </div>
-                <div class="check fas fa-check"></div>
-            </div>
-            <div class="step">
-                <p>Enviar</p>
-                <div class="bullet">
-                    <span>4</span>
-                </div>
-                <div class="check fas fa-check"></div>
-            </div>
+    <form action="#" class="form">
+        <!-- Progress bar -->
+        <div class="progressbar">
+          <div class="progress" id="progress"></div>
+          
+          <div
+            class="progress-step progress-step-active"
+            data-title="Intro"
+          ></div>
+          <div class="progress-step" data-title="Contact"></div>
+          <div class="progress-step" data-title="ID"></div>
+          <div class="progress-step" data-title="Password"></div>
         </div>
+        <p><h1 class="text-center" id="mensagem2" >Complete seu Cadastro de Pessoa Física</h1></p>
         <br>
-        <header>Complete seu Cadastro de Pessoa Física
+    <p><h2 class="text-center" id="mensagem3" >Seja parte da mudança! , pedimos que complete seu cadastro de pessoa física. Suas informações nos ajudarão a facilitar o processo de doação e a conectar você a quem mais precisa.</h2></p>
+
+  
+        <!-- Steps -->
+        <div class="form-step form-step-active">
+          <div class="input-group">
+            <label for="username">Nome completo</label>
+            <input type="text" name="username" id="username" />
+          </div>
+          <div class="input-group">
+            <label for="position">CPF</label>
+            <input type="number" name="position" id="position" />
+          </div>
+
+          <div class="input-group">
+            <label for="position">E-mail</label>
+            <input type="email" name="position" id="position" />
+          </div>
+
+          <div class="input-group">
+            <label for="position">Senha</label>
+            <input type="password" name="position" id="position" />
+          </div>
+
+          <div class="input-group">
+            <label for="position">Confirmar senha</label>
+            <input type="password" name="position" id="position" />
+          </div>
+
+          <div class="">
+            <a href="#" class="btn btn-next width-50 ml-auto" >Next</a>
+          </div>
+        </div>
+        <div class="form-step">
+          <div class="input-group">
+            <label for="phone">CEP</label>
+            <input type="text" name="phone" id="phone" />
+          </div>
+          <div class="input-group">
+            <label for="email">Rua</label>
+            <input type="text" name="email" id="email" />
+          </div>
+
+          <div class="input-group">
+            <label for="email">Bairro</label>
+            <input type="text" name="email" id="email" />
+          </div>
+
+          <div class="input-group">
+            <label for="email">Cidade</label>
+            <input type="text" name="email" id="email" />
+          </div>
+
+          <div class="input-group">
+            <label for="email">Estado</label>
+            <input type="text" name="email" id="email" />
+          </div>
+
+          <div class="input-group">
+            <label for="email">País</label>
+            <input type="text" name="email" id="email" />
+          </div>
+
+
+          <div class="btns-group">
+           <a href="#" class="btn btn-prev">Previous</a>
+           <button id="trocarMensagem"><a href="#" class="btn btn-next" >Next</a></button>
+          </div>
+        </div>
+        <div class="form-step">
+          
+            <h1 class="texto1" id="mensagem1" >Estamos quase lá...</h1>
             <br>
+            <h2 class="texto2" id="mensagem1" >Ao utilizar a plataforma Donatio para realizar doações de objetos, você concorda com os seguintes termos de responsabilidade:</h2>
             <br>
-            <p>Seja parte da mudança! , pedimos que complete seu cadastro de pessoa física. Suas informações nos
-                ajudarão a facilitar o processo de doação e a conectar você a quem mais precisa.</p>
-        </header>
-
-        <div class="form-outer">
-            <form action="#">
-                <div class="page slide-page">
-
-                    <div class="field">
-                        <div class="label">Nome completo</div>
-                        <input type="text">
-                    </div>
-                    <div class="field">
-                        <div class="label">CPF</div>
-                        <input type="text">
-                    </div>
-
-                    <div class="field">
-                        <div class="label">E-mail</div>
-                        <input type="text">
-                    </div>
-
-                    <div class="field">
-                        <div class="label">Senha</div>
-                        <input type="text">
-                    </div>
-
-                    <div class="field">
-                        <div class="label">Confirmar senha</div>
-                        <input type="text">
-                    </div>
-
-                    <div class="field">
-                        <button class="firstNext next">Próximo</button>
-                    </div>
+            <div class="card">
+                <div class="escrita">
+                    <br>
+                    <h1>Segurança e Encontros em Locais Públicos Movimentados</h1>
+                    <h2>Ao combinar encontros para entrega ou retirada de objetos, encorajamos fortemente que esses encontros ocorram em locais públicos movimentados, como praças, shoppings ou postos de polícia.</h2>
                 </div>
+                
+            </div>
 
-                <div class="page">
-                    
-                    <div class="field">
-                        <div class="label">CEP</div>
-                        <input type="text">
-                    </div>
-                    <div class="field">
-                        <div class="label">Rua</div>
-                        <input type="Number">
-                    </div>
-                    <div class="field">
-                        <div class="label">Bairro</div>
-                        <input type="Number">
-                    </div>
+            <div class="card2">
+                <div class="escrita2">
+                    <h1>Responsabilidade Pessoal</h1>
+                    <h2>A plataforma Donatio serve como um facilitador de conexões entre doadores e receptores, bem como entre doadores e entregadores. No entanto, a Donatio não se responsabiliza por eventos que ocorram durante ou após esses encontros, nem pela integridade dos objetos doados.</h2>
+                <br>
+                </div>
+            </div>
+<br>
+          <div class="btns-group2" id="meuBotap">
+            <a href="#" class="btn btn-prev"><svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g filter="url(#filter0_dd_82_102)">
+                <rect x="4" width="96" height="96" fill="url(#pattern0)" shape-rendering="crispEdges"/>
+                </g>
+                <defs>
+                <filter id="filter0_dd_82_102" x="0" y="0" width="104" height="104" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_82_102"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="effect1_dropShadow_82_102" result="effect2_dropShadow_82_102"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_82_102" result="shape"/>
+                </filter>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_82_102" transform="scale(0.0111111)"/>
+                </pattern>
+                <image id="image0_82_102" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD6klEQVR4nO2dyWpUQRSGC5xRdGlMBBX1BRxWKgZxwIWoCxUcwHmTQIyiSXbuHFYS8DUcF4o+gCKKQzZu1I2zGXRlX0j85JAjNGIwmqq659atDxpC0+mc+rtTt85fp851LpPJZDKZTCaTyWQykwOYBqwFjgGXgRvAC+AVMAwU+hjW517oay7p76yR95jkn6sXwGLgFHAb+MbU+QrcArqANldngDnAIeA+MEY4RoF7wEFgtqsLwDz9pr0jPp+B88AClyrADOAsMET5SAxnJCaXEsAGYAB7vAQ2u6ojcyJwFfiBXSS2fmCWqyLAUuAh1eEJsMJVCfl39LRMi40sCze5KgDsBr5TXQpgn7MMcDLwmjgWMoYTziLALk0OUmEM2OssIfMa0CA9CmCrswCwsqIXvn+5QC4vW+RZuixKncelrrM1GakL/WWm1ZYzPt/IWDfGFnk68Jz6MRDViFIXrq50x/STB6kvg6JBDKF7yh6pAc7E2H76GHFADf1gW/TRo0lE2bwPui2me3wxRd7+hxh6scGBkELLRmoMCmDHBDEsxAZ3QoncFsk0KiYSWeNoxY7p5L+UQesuSpkumgH6sEOn840Wt5Qt8nZjLuH1EGVaI2VNFwKwzeDOzYjX8jOthQtFo4Lf5GZW+xT6eKAgi4p+k5s54lNoqer0TZGAyMIFn0Lf9BxckYjIwjWfQvu0RBsVn5N/56lPod/EEjk0wCLgnEfP5LXP4HzZoj3OCB5dyC8+g/L16bc4I6gb6IOGz6BSFLrNotC+po5eZwSPdqvXqSOli2Gr5w0ErxfDvLyLtLzLCUukhCWn4JFScDmRGoIigVT8sE+hs006Mat8Cp2N/xjGv4otZ6tD0qig2eTvQtg0SDlWjAGxe7FDR6iFvoVyg4XYYDSYpaBdAsouoGkl5QIaHaS0Yii7JKwPG+wPXeT4IbLYvWrWL9KfLRQ5vgve+6PmRei/OB1UZBV6rliD1JfBKIXoKrY0FakrXVFEbjos9Iz6MRC9aw2wPh9/i4R2bqkLV2LpOtERZTm+mzqPgJmlCa1iL9eD6akyAixzFgDajZvz/4skR1ucJYCdCTZG2eMsIu1xEmn1Myo14c4y2vKnytNIw1yLn7+0/vla0Qtfu6sSwBLgAdXhcektfaa4zu43nkFKbFdKXyd7TNefYw+JaZ1LCcaNqG4jFusX3Wye7lKFcT9bBvm2BIE/aaPu+a4uMN7y+ABwN3CiI+99R/b4atV6/k/ofmCnnK3Wu1FMlWF9rw5LpwxMwXj52SrgKHBRqoGkBllvBTLUdHuQIX3uqb5GXntEfzffHiSTyWQymUwmk8lk3CT5CZL0SdnlKvNBAAAAAElFTkSuQmCC"/>
+                </defs>
+                </svg>
+                </a>
 
-                    <div class="field">
-                        <div class="label">Cidade</div>
-                        <input type="Number">
-                    </div>
-                   
-                    <div class="field">
-                        <div class="label">Estado</div>
-                        <input type="Number">
-                    </div>
+            <a href="#" class="btn btn-next2" id="meuBotap"><svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g filter="url(#filter0_dd_82_101)">
+                <rect x="4" width="96" height="96" fill="url(#pattern0)" shape-rendering="crispEdges"/>
+                </g>
+                <defs>
+                <filter id="filter0_dd_82_101" x="0" y="0" width="104" height="104" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_82_101"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="effect1_dropShadow_82_101" result="effect2_dropShadow_82_101"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_82_101" result="shape"/>
+                </filter>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_82_101" transform="scale(0.0111111)"/>
+                </pattern>
+                <image id="image0_82_101" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD50lEQVR4nO2dSWsVQRDHG4xGUfRoYgSV6BeIelIxiAseRD2oYBSM2yWBGEN88ebN5RQCfg3XQ0Q/gCKRmOTiRb0Yt6yefA8Sf1KkxRyyaXp6ambqB3N5zJtX/adfd1d1dY1zhmEYhmEYhmEYxtIAVgC7gUvAPeARMAi8B8aBir/G/WeD/p67/ju75BlL/LliAWwGrgFPgR8sn0ngCdAG1LkiA6wBzgMvgGmSYwp4DpwDVruiAKzzPW2Y+HwHbgEbXF4BVgKdwBjpIzZ0iE0uTwD7gCH08Q446LKOjInAfeAXehHbeoBql0WArcArssMbYLvLEvJ3DLRMi40sCw+4LACcBH6SXSrAGacZ4GrCa+JYSBuuOI0AJ7xzkBemgdNOEzKuAWXyRwU47DQA7MjoxPcvE2R92iJX+2VR3ulLdZ3tnZGi0JOmW63Z4wuNtHV/bJGrgAGKx1DUQJSPwhWV9pjx5FGKy6hoEEPoUtotVUBHjO2nr0ociRJQ469SZIfpc6LbYn6PTwOlOWw7GlnspiSFlo1UDdTMY9+RiJHD3qRErlMUNKpZwM5YYk8nksrg8y600LWIrbGGkdYkhJbkFi2URUwFYj9MIk1rAl1UgGOL2J30MDIRNP3M58JppKygZ+8MKfRl9FJJuWc3hxRasjo1U0lR7NshhX6Mfiopif0gpNBZCYmWUxiz+0MK/TFgr+sEaoMZ93/tCSn2h5CGhQqL3nBKEKcnUJtGQholPTEEtU4JwMZAbSprFHqTU4LYolHo0aTCm2kB3NQ4dIScDEtp92zNk6Et7yIt78xhieSwmAseyQWXE6laqaQcVLoQUmgLk85PQ0ihLfAfI/DvxZaz1VooKwj4h50IZxkux4q1UFIgstCSlMtq6QZ/mVoo7WG5YkuVAA3U5DaBxjdESjGozOsgfkrY2aSTHL+gY+3cJWFXf3VFFnk48dofBU9C/8P1REX2Qq+V0CDFZTRKIroXW4qKFJW2KCLPOiz0luIxFL1qDbDXjr9FwlduKQrdsXSd74iyHN/NO6+BVakJ7cWu9wfT88oEsM1pAGjMeNWZhRyjQ04TwHFFQadQZ1ROOY1IeZyclPqZkpxwpxlf8ifLw0hZXYmfRUr/TGZ04mt0WQLYArwkO/SlXtJnmevsHuUepNjWnfo6OaC7PoA+xKY9Lk8wE4hqVxJiHfGbzVUurzATz5ZGfkpB4G++UPd6VxSYKXncBDxL2NGRZ/fKHl+hSs/Phd/3a5Wz1f5tFMtl3D+rJbGUgKzDTPpZA3ARuCPZQJKD7F8FMjbr9SBj/rN+f4/c2+y/a68HMQzDMAzDMAzDcEvkN6dJSbMs1VD2AAAAAElFTkSuQmCC"/>
+                </defs>
+                </svg>
+                </a>
 
-                    <div class="field">
-                        <div class="label">País</div>
-                        <input type="Number">
-                    </div>
-
-    <div class="field btns">
-        <button class="prev-1 prev">Anterior</button>
-        <button class="next-1 next">Próximo</button>
-    </div>
-    </div>
-
-    <div class="page">
-        <div class="title">Nascimento:</div>
-        <div class="field">
-            <div class="label">Data</div>
-            <input type="text">
+          </div>
         </div>
-        <div class="field">
-            <div class="label">Gênero</div>
-            <select>
-                <option>Masculino</option>
-                <option>Feminino</option>
-                <option>Outros</option>
-            </select>
+        <div class="form-step">
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="input-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+            />
+          </div>
+          <div class="btns-group">
+            <a href="#" class="btn btn-prev">Previous</a>
+            <input type="submit" value="Submit" class="btn" />
+          </div>
         </div>
-        <div class="field btns">
-            <button class="prev-2 prev">Anterior</button>
-            <button class="next-2 next">Próximo</button>
-        </div>
-    </div>
-
-    <div class="page">
-        <div class="title">Detalhes de login:</div>
-        <div class="field">
-            <div class="label">Nome do usuário</div>
-            <input type="text">
-        </div>
-        <div class="field">
-            <div class="label">Senha</div>
-            <input type="password">
-        </div>
-        <div class="field btns">
-            <button class="prev-3 prev">Anterior</button>
-            <button class="submit">Enviar</button>
-        </div>
-    </div>
-    </form>
-    </div>
-    </div>
+      </form>
     <script src="../js/pessoa fisica.js"></script>
 </body>
 
